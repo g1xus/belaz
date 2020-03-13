@@ -1,0 +1,27 @@
+.header
+    padding: 30px 0
+    background-color: #191919
+    color: #fff
+    &-logo
+        @media (max-width: 576px)
+            margin-bottom: 15px
+    &-info    
+        &__time
+            @include bold-font
+            font-size: 14px
+        &__weekend
+            @include reg-font 
+            font-size: 14px
+        @media (max-width: 576px)
+            margin-left: 15px    
+    &-phone
+        @include black-font
+        font-size: 16px
+        color: #fff
+        &:hover
+            color: darken(#fff, 10%)
+            text-decoration: none
+        @media (max-width: 576px)
+            font-size: 14px
+    &-button
+        margin-top: 20px

@@ -1,0 +1,14 @@
+.button
+    padding: 15px 20px
+    color: #ffffff
+    border: none
+    text-transform: uppercase
+    font-size: 12px
+    @media ( max-width: 768px)
+        font-size: 10px
+        
+    &:hover
+        cursor: pointer
+    &-primary
+        @include bold-font
+        background-color: $primary-color
