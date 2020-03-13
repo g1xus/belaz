@@ -64,7 +64,7 @@ function watch() {
     gulp.watch('./src/sass/*.sass', styles, browserSync.reload)
     gulp.watch('./src/js/**/*.js', scripts, browserSync.reload)
     gulp.watch('./build/index.html').on('change', browserSync.reload)
-    gulp.watch('./src/pug/*.pug', pugCompile, browserSync.reload)
+    gulp.watch('./src/pug/**/*.pug', pugCompile, browserSync.reload)
 
 }
 
