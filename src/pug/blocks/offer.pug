@@ -1,0 +1,19 @@
+mixin offer
+    section.offer
+        .container-fluid
+            .container
+                .row.justify-content-end
+                    .col-xl-6.col-lg-8.col-md-10.col-sm-12
+                        .offer-wrapper
+                            h2.offer-title
+                                | Получите прайс прямо сейчас на электронную почту!
+                            form.offer-form(action="#")
+                                input.form__input.offer-form__input(placeholder='Введите ваш e-mail')
+                                input.form__input.offer-form__input(placeholder='Введите ваш телефон')
+                                .offer-tip
+                                    span.offer-tip__text
+                                        | Прайс придет к Вам на почту в течение 5 минут!
+                                    img.offer-tip__img(src="img/offer/clock.svg", alt="clock", width='25px')
+                                button(type='button').button.button-primary.offer-button
+                                    | Получить прайс
+

@@ -10,28 +10,15 @@
   <body>
         <header class="header">
           <div class="container">
-            <div class="row align-items-center">
-              <div class="col-xl-5 col-lg-3 col-sm-5 col-12">
-                <div class="header-logo"><a href="#"><img src="img/logo.png" alt="Eddies-Car"></a></div>
+            <div class="header-content">
+              <div class="header-top"><a href="#"><img src="img/Logo.png" alt="Eddies-Car"></a>
+                <div class="header-toggle"><span class="header-toggle__item"></span></div>
               </div>
-              <div class="col-xl-3 col-lg-3 col-sm-3 col-6">
-                <div class="header-info">
-                  <div class="row">
-                    <div class="header-info__time">c 9:00 до 21:00</div>
-                  </div>
-                  <div class="row">
-                    <div class="header-info__weekend">без выходных</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
-                <div class="row"><a class="header-phone" href="tel: +7 (818) 247-47-25">+7 (818) 247-47-25</a></div>
-                <div class="row"><a class="header-phone" href="tel: +7 (818) 247-47-25">+7 (818) 247-47-25</a></div>
-              </div>
-              <div class="col-xl-2 col-lg-3 col-sm-12 col-6">
-                <div class="header-button">
-                  <button class="button button-primary">Заказать звонок                        </button>
-                </div>
+              <div class="header-wrapper">
+                <div class="worktime"><span class="worktime-time">
+                     9:00 до 21:00</span><span class="worktime-weekend">без выходных</span></div>
+                <div class="phone-numbers"><a class="phone-numbers__el" href="tel: +7 (818) 247-47-25">+7 (818) 247-47-25</a><a class="phone-numbers__el" href="tel: +7 (818) 247-47-25">+7 (818) 247-47-25</a></div>
+                <button class="button button-primary header-button">Заказать звонок</button>
               </div>
             </div>
           </div>
@@ -40,7 +27,7 @@
           <div class="container-fluid">
             <div class="container">
               <div class="row">
-                <div class="col-xl-6">  
+                <div class="col-12 col-xl-6">  
                   <div class="hero-ticket">
                     <h1 class="hero-ticket__title">Оригинальные запчасти для Белаз</h1><span class="hero-ticket__subtitle">с бесплатной доставкой в Ваш город!</span>
                     <div class="hero-ticket__features">
@@ -49,6 +36,25 @@
                       <div class="hero-ticket__item"><img class="hero-ticket__img" src="img/features/calendar.svg" width="30px" alt="6mounths"><span class="hero-ticket__description">Даем рассрочку 6 месяцев  </span></div>
                       <div class="hero-ticket__item"><img class="hero-ticket__img" src="img/features/reward.svg" width="30px" alt="garant"><span class="hero-ticket__description">Даем гарантию от 12 месяцев  </span></div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="offer">
+          <div class="container-fluid">
+            <div class="container">
+              <div class="row justify-content-end">
+                <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12">
+                  <div class="offer-wrapper">
+                    <h2 class="offer-title">Получите прайс прямо сейчас на электронную почту!</h2>
+                    <form class="offer-form" action="#">
+                      <input class="form__input offer-form__input" placeholder="Введите ваш e-mail">
+                      <input class="form__input offer-form__input" placeholder="Введите ваш телефон">
+                      <div class="offer-tip"><span class="offer-tip__text">Прайс придет к Вам на почту в течение 5 минут!</span><img class="offer-tip__img" src="img/offer/clock.svg" alt="clock" width="25px"></div>
+                      <button class="button button-primary offer-button" type="button">Получить прайс</button>
+                    </form>
                   </div>
                 </div>
               </div>

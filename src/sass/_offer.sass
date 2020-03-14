@@ -1,0 +1,42 @@
+.offer
+    padding: 100px 0
+    @media (min-width: 768px)
+        background: url(../img/offer-bg.jpg) no-repeat center
+        background-size: cover
+    &-wrapper
+        display: flex
+        flex-direction: column
+        text-align: right
+        @media (max-width: 576px)
+            text-align: center
+            
+    &-title
+        @include black-font
+        font-size: 30px
+        color: $text-color
+        margin-bottom: 50px
+    &-form
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &__input
+            width: 48%
+            margin-bottom: 30px
+            position: relative
+    &-tip
+        width: 48%
+        display: flex
+        align-items: center
+        @media (max-width: 576px)
+            width: 100%
+            margin-bottom: 20px
+        &__text
+            @include reg-font
+            display: block
+            text-align: right
+            margin-right: 20px
+    &-button
+        width: 48%
+        padding: 20px 20px
+        @media (max-width: 576px)
+            width: 100%

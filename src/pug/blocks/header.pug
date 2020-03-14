@@ -1,27 +1,25 @@
 mixin header
     header.header
         .container
-            .row.align-items-center
-                .col-xl-5.col-lg-3.col-sm-5.col-12
-                    .header-logo
-                        a(href='#')
-                            img(src='img/logo.png' alt='Eddies-Car')
-                .col-xl-3.col-lg-3.col-sm-3.col-6
-                    .header-info
-                        .row
-                            .header-info__time
-                                | c 9:00 до 21:00
-                        .row
-                            .header-info__weekend
-                                | без выходных
-                .col-xl-2.col-lg-3.col-sm-4.col-6
-                    .row
-                        a(href="tel: +7 (818) 247-47-25").header-phone
+            .header-content
+                .header-top
+                    a(href='#')
+                        img(src='img/Logo.png' alt='Eddies-Car')
+                    .header-toggle
+                        span.header-toggle__item
+                .header-wrapper
+                    .worktime
+                        span.worktime-time 
+                            | 9:00 до 21:00
+                        span.worktime-weekend
+                            | без выходных
+                    .phone-numbers
+                        a.phone-numbers__el(href="tel: +7 (818) 247-47-25")
                             | +7 (818) 247-47-25
-                    .row
-                        a(href="tel: +7 (818) 247-47-25").header-phone
+                        a.phone-numbers__el(href="tel: +7 (818) 247-47-25")
                             | +7 (818) 247-47-25
-                .col-xl-2.col-lg-3.col-sm-12.col-6
-                    .header-button
-                        button.button.button-primary
-                            | Заказать звонок                        
+                    button.button.button-primary.header-button
+                        | Заказать звонок
+                
+
+

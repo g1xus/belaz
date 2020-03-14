@@ -2,27 +2,66 @@
     padding: 20px 0
     background-color: #191919
     color: #fff
-    &-logo
-        @media (max-width: 576px)
-            margin-bottom: 15px
-    &-info    
-        &__time
-            @include bold-font
-            font-size: 14px
-        &__weekend
-            @include reg-font 
-            font-size: 14px
-        @media (max-width: 576px)
-            margin-left: 15px    
-    &-phone
+    &-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 768px)
+            flex-direction: column
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        transition: 0.5s
+        @media (max-width: 768px)
+            transform: translateX(-200%)
+            background-color: #191919
+            position: absolute
+            margin-top: 59px
+            z-index: 100
+            width: 100%
+            padding: 0 15px
+            flex-wrap: wrap
+            justify-content: center
+        &_active
+            display: flex
+            transform: translateX(0)
+            visibility: visible
+    &-top
+        display: flex
+        justify-content: space-between
+        @media (max-width: 768px)
+            width: 100%
+.worktime
+    display: flex
+    flex-direction: column
+    text-align: center
+    font-size: 12px
+    margin-right: 180px
+    @media (max-width: 992px)
+        margin-right: 50px
+    @media (max-width: 768px)
+        margin: 0
+        width: 45%
+        
+    &-time
+        @include bold-font
+    &-weekend
+        @include reg-font
+.phone-numbers
+    display: flex
+    flex-direction: column
+    margin-right: 28px
+    @media (max-width: 768px)
+        margin: 0
+        width: 45%
+    &__el
         @include black-font
-        font-size: 16px
         color: #fff
-        &:hover
-            color: darken(#fff, 10%)
-            text-decoration: none
-        @media (max-width: 576px)
-            font-size: 14px
-    &-button
-        @media (max-width: 992px)
-            margin-top: 20px
+        margin-bottom: 5px
+.header-button
+    @media (max-width: 768px)
+        width: 100%
+        margin-top: 10px
+        margin-bottom: 20px
+
