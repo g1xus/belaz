@@ -1,0 +1,27 @@
+.dont-wait
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        @media (max-width: 576px)
+            justify-content: center
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        flex-basis: 20%
+        @media (max-width: 992px)
+            flex-basis: 45%
+            margin-bottom: 30px
+        @media (max-width: 576px)
+            flex-basis: 100%
+    &__img
+        &-wrapper
+            width: 100px
+            height: 100px
+            margin: 0 auto 20px auto
+    &__description
+        @include reg-font
+        text-align: center
+        font-size: 18px
+        max-width: 200px
