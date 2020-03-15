@@ -1,0 +1,21 @@
+mixin price-offer
+    section.price-offer.light
+        .container
+            .section-headline
+                h3.section-headline__title
+                    | Ищете конкретную деталь?
+                span.section-headline__subtitle
+                    | Если у Вас есть артикул - введите его в поле ниже и получите цену ПРЯМО СЕЙЧАС!
+            form(action="#").price-offer__form
+                input(placeholder='Введите артикул детали', type="text").form__input.price-form__item
+                input(placeholder='Введите ваш телефон', type="text").form__input.price-form__item
+                button.button.button-secondary.price-form__button
+                    | Узнать цену      
+            .price-offer__help  
+                span.price-offer__we-call
+                    | Мы перезвоним вам в течение 3 минут и назовем цену детали!
+                .price-offer__call-us
+                    span.price-offer__help-text
+                        | Или Вы можете перезвонить нам сами: 
+                    a(href='tel: +7 (818) 247-47-25').price-offer__phone-number.light-link
+                        | +7 (818) 247-47-25

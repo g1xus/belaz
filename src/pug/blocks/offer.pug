@@ -8,8 +8,8 @@ mixin offer
                             h2.offer-title
                                 | Получите прайс прямо сейчас на электронную почту!
                             form.offer-form(action="#")
-                                input.form__input.offer-form__input(placeholder='Введите ваш e-mail')
-                                input.form__input.offer-form__input(placeholder='Введите ваш телефон')
+                                input(placeholder='Введите ваш e-mail', type='text').form__input.offer-form__input
+                                input(placeholder='Введите ваш телефон', type='text').form__input.offer-form__input
                                 .offer-tip
                                     span.offer-tip__text
                                         | Прайс придет к Вам на почту в течение 5 минут!
