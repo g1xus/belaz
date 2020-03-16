@@ -1,0 +1,17 @@
+mixin help-offer
+    section.help-offer.light
+        .container
+            .section-headline
+                h3.section-headline__title
+                    | Если Вам необходима бесплатная консультация по вопросу обслуживания
+            .help-offer-wrapper
+                .help-offer-phone
+                    span.help-offer-phone__cta
+                        | Звоните нам по телефону:
+                    a(href="tel: +7 (818) 247-47-25").help-offer-phone__number.light-link
+                        | +7 (818) 247-47-25
+                form(action="#").help-offer-form
+                    input(placeholder='Введите ваш телефон', type='text').form__input.help-offer-form__input
+                    button(type='button').button.button-secondary.help-offer-form__input
+                        | Перезвонить сейчас
+
