@@ -1,0 +1,18 @@
+.warehouse
+    padding: 100px 0
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        @media (max-width: 768px)
+            justify-content: space-around
+    &-item
+        flex-basis: 30%
+        @media (max-width: 768px)
+            flex-basis: 45%
+            margin-bottom: 30px
+        @media (max-width: 576px)
+            flex-basis: 70%
+        &__img
+            width: 100%
+            
