@@ -1,0 +1,27 @@
+.convenience
+    padding: 100px 0
+    &-wrapper
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &-item
+        display: flex
+        flex-direction: column
+        flex-basis: 30%
+        @media (max-width: 768px)
+            flex-basis: 45%
+            margin-bottom: 30px
+        @media (max-width: 576px)
+            flex-basis: 100%
+            margin-bottom: 40px
+        &__img
+            max-width: 88px
+            margin: 0 auto
+            margin-bottom: 30px
+            @media (max-width: 768px)
+                margin-bottom: 15px
+        &__description
+            @include reg-font
+            max-width: 215px
+            text-align: center
+            margin: 0 auto
