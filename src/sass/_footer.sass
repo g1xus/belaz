@@ -1,0 +1,25 @@
+.footer
+    background-color: $dark-color
+    padding: 30px 0
+    &-logo
+        @media (max-width: 576px)
+            margin-bottom: 30px
+    &-wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 576px)
+            justify-content: center
+            flex-direction: column
+    &-help
+        display: flex
+        &__question
+            @include reg-font
+            font-size: 13px
+        &__link
+            font-size: 18px
+        &__wrapper
+            display: flex
+            flex-direction: column
+            text-align: center
