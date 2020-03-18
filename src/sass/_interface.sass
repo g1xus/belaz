@@ -13,9 +13,15 @@
     &-primary
         @include bold-font
         background-color: $primary-color
+        &:hover, &:active, &:focus
+            background-color: lighten($primary-color, 15%)
+            outline: none
     &-secondary
         @include reg-font
         background-color: $sec-color
+        &:hover, &:active, &:focus
+            background-color: lighten($sec-color, 10%)
+            outline: none
 .form
     &__input
         @include bold-font
